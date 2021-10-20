@@ -1,0 +1,119 @@
+:root {
+    --primary: rgb(255, 174, 0);
+    --secondary: rgb(49, 63, 95);
+    --blue: rgb(59, 95, 169);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.button-rounded {
+    border-radius: 100px;
+}
+
+.button-search {
+    display: flex;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    color: var(--primary) !important;
+}
+
+.active::before {
+    content: "";
+    position: absolute;
+    bottom: 38px;
+    background-color: var(--primary);
+    height: 2px;
+    width: 3.2rem;
+}
+
+.div-container {
+    height: 70vh;
+    width: 100%;
+}
+
+.img-bg {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    height: 70vh;
+    width: 100%;
+    object-position: 0px -100px;
+}
+
+.bg-gray {
+    background-color: rgb(185, 185, 185);
+}
+
+.logoCard {
+    font-size: 5rem !important;
+    color: var(--primary);
+    position: absolute;
+    transform: translate(-2rem, -4.5rem);
+}
+
+.valeursHeader:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    background-color: var(--primary);
+    transform: translate(-8rem, 1.5rem);
+}
+
+.valeursHeader:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    background-color: var(--primary);
+    transform: translate(1.8rem, 1.5rem);
+}
+
+.secondaryText {
+    color: var(--secondary);
+}
+
+.secondaryButton {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.secondaryButtonOutline {
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.secondaryButtonOutline:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.blue_text {
+    color: var(--blue);
+}
+
+.actu_header::after {
+    content: "";
+    position: absolute;
+    background-color: var(--primary);
+    height: 3px;
+    width: 12ch;
+    transform: translate(-20rem, 3.5rem);
+}
+
+.card::before {
+    position: absolute;
+    content: "10 Janvier 1996";
+    color: white;
+    background-color: var(--blue);
+    padding: 0 15px;
+    z-index: 10;
+}

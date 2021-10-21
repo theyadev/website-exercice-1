@@ -21,6 +21,15 @@ body {
     justify-content: center;
 }
 
+.button-search-small{
+    display: flex;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    align-items: center;
+    justify-content: center;
+}
+
 .active {
     color: var(--primary) !important;
 }
@@ -49,7 +58,11 @@ body {
 }
 
 .bg-gray {
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(145, 145, 145);
+}
+
+.text-gray {
+    color: rgb(145, 145, 145); 
 }
 
 .logoCard {
@@ -116,4 +129,32 @@ body {
     background-color: var(--blue);
     padding: 0 15px;
     z-index: 10;
+}
+
+.temoignage-bot {
+    height: 40rem;
+    width: 100%;
+}
+.img-footer {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    height: 40rem;
+    width: 100%;
+    object-position: 0px -100px;
+    filter: brightness(50%);
+}
+
+.cardTemoignage{
+    background-color: rgba(255,255,255,0.8);
+    width:23rem;
+}
+
+.btn-outline-light:hover {
+    border-color: white !important;
+}
+
+
+.footer {
+    background-color: var(--blue);
 }
